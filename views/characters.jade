@@ -1,0 +1,10 @@
+br
+table
+  for char in characters
+    tr
+      td
+        img(src= char.emblemPath)
+      td #{char.clazz} #{char.level}
+      for weapon in char.weapons
+        td
+          img(src= weapon.icon, title=weapon.text)
